@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import RNBootSplash from 'react-native-bootsplash';
 import FlashMessage from 'react-native-flash-message';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import Navigation from 'src/navigation';
-import { ThemeProvider } from 'src/style/theme';
+import { RootNavigation } from 'navigation';
 
 const queryTime = 1000 * 60 * 60 * 24;
 const queryClient = new QueryClient({
@@ -31,12 +30,10 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <Navigation />
-        <FlashMessage position="top" />
-      </ThemeProvider>
+      <RootNavigation />
+      <FlashMessage position="top" />
     </QueryClientProvider>
   );
 };
 
-export default Sentry.wrap(App);
+export default App;

@@ -3,10 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { navigationRef } from './utils';
 import AuthNavigation from './auth';
-import { RootNavigationRoutes } from '../utils/types/navigation-types';
-import DashboardNavigation from './dashboard';
+import { RootStackParamList } from 'types';
 
-const Stack = createStackNavigator<RootNavigationRoutes>();
+const Stack = createStackNavigator<RootStackParamList>();
 
 const AppNavigation = () => {
   return (
