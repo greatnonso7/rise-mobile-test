@@ -1,8 +1,7 @@
 export const colors = {
-  orange: '#FF7F36',
-  pale_sky: '#6B7280',
-  green: '#31AE63',
-  purple: '#AE8ED6',
-  black: '#212427',
-  white: '#FFFFFF',
+  PRIMARY: '#0898A0',
+  INDIGO: '#B80074',
+  ORANGE: '#FE7122',
+  WHITE: '#FFFFFF',
+  OFF_WHITE: '#71879C1A',
 };
