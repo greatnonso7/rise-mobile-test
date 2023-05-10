@@ -16,7 +16,11 @@ const Screen = ({ children, backgroundColor }: Props) => {
   console.log(localStyles, 'localStyles');
   return (
     <SafeAreaView style={[styles.container, localStyles]}>
-      <StatusBar backgroundColor="white" translucent barStyle="dark-content" />
+      <StatusBar
+        backgroundColor={backgroundColor || 'white'}
+        translucent
+        barStyle="dark-content"
+      />
       {children}
     </SafeAreaView>
   );

@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     color: theme.colors.TEXT_BLACK,
   },
   mainButtonContainer: {
-    marginTop: hp(50),
+    marginTop: hp(70),
     marginHorizontal: wp(20),
   },
   buttonStyle: {
@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     color: theme.colors.PRIMARY,
   },
   buttonSectionContainer: {
-    marginTop: hp(50),
+    marginTop: hp(70),
     marginHorizontal: wp(20),
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
   },
   paginationWrapper: {
     position: 'absolute',
-    bottom: hp(420),
+    bottom: hp(450),
     zIndex: 10000,
     alignSelf: 'center',
     flexDirection: 'row',
