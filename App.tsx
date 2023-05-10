@@ -3,6 +3,7 @@ import RNBootSplash from 'react-native-bootsplash';
 import FlashMessage from 'react-native-flash-message';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { RootNavigation } from 'navigation';
+import SplashScreen from 'react-native-splash-screen';
 
 const queryTime = 1000 * 60 * 60 * 24;
 const queryClient = new QueryClient({
@@ -24,8 +25,8 @@ if (__DEV__) {
 const App = () => {
   useEffect(() => {
     setTimeout(() => {
-      RNBootSplash.hide({ fade: true });
-    }, 300);
+      SplashScreen.hide();
+    }, 2000);
   }, []);
 
   return (
