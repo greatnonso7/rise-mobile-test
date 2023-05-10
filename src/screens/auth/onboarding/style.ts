@@ -27,11 +27,35 @@ export const styles = StyleSheet.create({
     fontSize: hp(14),
     color: theme.colors.TEXT_BLACK,
   },
+  mainButtonContainer: {
+    marginTop: hp(50),
+    marginHorizontal: wp(20),
+  },
+  buttonStyle: {
+    marginTop: hp(10),
+    backgroundColor: theme.colors.OFF_WHITE_100,
+  },
+  titleStyle: {
+    color: theme.colors.PRIMARY,
+  },
   buttonSectionContainer: {
     marginTop: hp(50),
     marginHorizontal: wp(20),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  paginationWrapper: {
+    position: 'absolute',
+    bottom: hp(420),
+    zIndex: 10000,
+    alignSelf: 'center',
+    flexDirection: 'row',
+  },
+  paginationDots: {
+    width: wp(8),
+    height: hp(8),
+    borderRadius: 100,
+    marginLeft: wp(14),
   },
 });

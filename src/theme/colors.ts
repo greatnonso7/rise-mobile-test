@@ -8,5 +8,6 @@ export const colors = {
   WHITE: '#FFFFFF',
   TEXT_BLACK: '#222222',
   OFF_WHITE: '#71879C1A',
+  OFF_WHITE_100: '#71879C1A',
   GREY: '#94A1AD',
 };

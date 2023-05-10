@@ -6,8 +6,19 @@ import { View, Text, ScrollView, Image } from 'react-native';
 import theme from 'theme';
 import { styles } from './style';
 import NextButton from './components/NextButton';
+import Button from 'design-system/Button';
+import { AuthStackParamList } from 'types';
+import { StackNavigationProp } from '@react-navigation/stack';
 
-const Onboarding = () => {
+type AuthNavigationProps = StackNavigationProp<
+  AuthStackParamList,
+  'Onboarding'
+>;
+type Props = {
+  navigation: AuthNavigationProps;
+};
+
+const Onboarding = ({ navigation: { navigate } }: Props) => {
   const [sliderState, setSliderState] = useState({ currentPage: 0 });
   const { currentPage: pageIndex } = sliderState;
 
@@ -15,6 +26,12 @@ const Onboarding = () => {
     0: theme.colors.ORANGE_LIGHT,
     1: theme.colors.INDIGO_LIGHT,
     2: theme.colors.PRIMARY_LIGHT,
+  };
+
+  const dotColors: Record<string, string> = {
+    0: theme.colors.ORANGE,
+    1: theme.colors.INDIGO,
+    2: theme.colors.PRIMARY,
   };
 
   const scrollRef = useRef<ScrollView>(null);
@@ -33,6 +50,24 @@ const Onboarding = () => {
 
   return (
     <Screen backgroundColor={bgColors[pageIndex]}>
+      <View style={styles.paginationWrapper}>
+        {Array.from(Array(3).keys()).map((key, index) => {
+          return (
+            <View
+              style={[
+                styles.paginationDots,
+                {
+                  backgroundColor:
+                    pageIndex === index
+                      ? dotColors[index]
+                      : theme.colors.OFF_WHITE_100,
+                },
+              ]}
+              key={index}
+            />
+          );
+        })}
+      </View>
       <ScrollView
         ref={scrollRef}
         horizontal={true}
@@ -66,7 +101,20 @@ const Onboarding = () => {
               </View>
 
               {pageIndex === 2 ? (
-                <View />
+                <View style={styles.mainButtonContainer}>
+                  <Button
+                    isNotBottom
+                    title="Sign Up"
+                    onPress={() => navigate('Register')}
+                  />
+                  <Button
+                    isNotBottom
+                    buttonStyle={styles.buttonStyle}
+                    titleStyle={styles.titleStyle}
+                    title="Sign In"
+                    onPress={() => navigate('Login')}
+                  />
+                </View>
               ) : (
                 <View style={styles.buttonSectionContainer}>
                   <NextButton
