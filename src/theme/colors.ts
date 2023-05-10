@@ -1,7 +1,10 @@
 export const colors = {
   PRIMARY: '#0898A0',
+  PRIMARY_LIGHT: '#F6FFFE',
   INDIGO: '#B80074',
+  INDIGO_LIGHT: '#FDF5F9',
   ORANGE: '#FE7122',
+  ORANGE_LIGHT: '#FFFAF8',
   WHITE: '#FFFFFF',
   OFF_WHITE: '#71879C1A',
 };
