@@ -6,20 +6,8 @@
       "sha1": "8f1d1ade3803efd38e7f6036c6f61d12ba23dd52"
     },
     {
-      "path": "src/assets/fonts/DMSans-BoldItalic.ttf",
-      "sha1": "b7a9cc4488f330547fcb2e28df1d7e92b292b6e3"
-    },
-    {
-      "path": "src/assets/fonts/DMSans-Italic.ttf",
-      "sha1": "1a236f8cffd21a11256b4ba03898cb4156225226"
-    },
-    {
       "path": "src/assets/fonts/DMSans-Medium.ttf",
       "sha1": "6c1f2f7c4e3a18f742adbc1a0a3bc57776267230"
-    },
-    {
-      "path": "src/assets/fonts/DMSans-MediumItalic.ttf",
-      "sha1": "9a72d9d992c9e3934810a53ca3218b51bb53fc34"
     },
     {
       "path": "src/assets/fonts/DMSans-Regular.ttf",
@@ -32,10 +20,6 @@
     {
       "path": "src/assets/fonts/TomatoGrotesk-Bold.otf",
       "sha1": "6ee534b1da02e8f3385715f656f1f324aee97cd8"
-    },
-    {
-      "path": "src/assets/fonts/TomatoGrotesk-ExtraBold.otf",
-      "sha1": "beef85dc1f93f9b4b42505b9bc26a35b90643c88"
     },
     {
       "path": "src/assets/fonts/TomatoGrotesk-Medium.otf",

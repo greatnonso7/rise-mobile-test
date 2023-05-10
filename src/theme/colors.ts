@@ -6,5 +6,7 @@ export const colors = {
   ORANGE: '#FE7122',
   ORANGE_LIGHT: '#FFFAF8',
   WHITE: '#FFFFFF',
+  TEXT_BLACK: '#222222',
   OFF_WHITE: '#71879C1A',
+  GREY: '#94A1AD',
 };

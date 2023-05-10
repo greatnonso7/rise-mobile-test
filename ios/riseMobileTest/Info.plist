@@ -55,15 +55,11 @@
 	<array>
 		<string>TomatoGrotesk-Black.otf</string>
 		<string>TomatoGrotesk-Bold.otf</string>
-		<string>TomatoGrotesk-ExtraBold.otf</string>
 		<string>TomatoGrotesk-Medium.otf</string>
 		<string>TomatoGrotesk-Regular.otf</string>
 		<string>TomatoGrotesk-SemiBold.otf</string>
 		<string>DMSans-Bold.ttf</string>
-		<string>DMSans-BoldItalic.ttf</string>
-		<string>DMSans-Italic.ttf</string>
 		<string>DMSans-Medium.ttf</string>
-		<string>DMSans-MediumItalic.ttf</string>
 		<string>DMSans-Regular.ttf</string>
 	</array>
 </dict>
